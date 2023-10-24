@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="/images/nav-icon.ico" />
+    <title>Register | form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color: #141414; color: #fff">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid position-sticky top-0" style="z-index: 999;">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/nav-icon.ico"
+            alt="Logo"
+            style="width: 35px; height: auto"
+          />
+        </a>
+        <div class="navbar-toggler-center">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="index"
+              >Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold" href="myproject">Add Project</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold" href="testimonial">My Testimonials</a>
+            </li>
+          </ul>
+          <div>
+            <a
+              class="text-danger fw-bolder"
+              href="register"
+              style="text-decoration: none;"
+            >Register</a>
+          </div>
+          <div>
+            <a
+              class="text-white fw-bold mx-5"
+              href="login"
+              style="text-decoration: none;"
+            >Login</a>
+          </div>
+          <div
+            class="d-flex collapse justify-content-center fw-bolder"
+            role="search"
+          >
+            <a class="btn bg-black text-white fw-bold" href="contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--start form-login -->
+    <div>
+      <div  class="container-fluid row col-lg-7 pt-3 mx-auto d-flex justify-content-center">
+        <form class="container w-md-50 p-5" action="/register" method="post">
+          <div class="d-flex justify-content-center text-center mb-4">
+            <img src="images/user.svg" alt="" style="width: 100px; height: 100px"> 
+        </div>
+          <div class="mb-3 mt-3">
+            <h2 class="text-center fw-bolder">Register</h2>
+          </div>
+          <div class="mb-3 mt-5">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"/>
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control bg-white"
+              id="Email"
+              aria-describedby="emailHelp"
+              name="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Password" class="form-label">Password
+              <b class="text-danger">*</b></label>
+            <input type="password" class="form-control" id="Password" name="password" placeholder="Your Password"/>
+          </div>
+          <div class="d-flex justify-content-end mb-5">
+            <button
+              type="submit"
+              class="btn text-white fw-bolder"
+              style="background-color: orangered;"
+            >Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--end form-login -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

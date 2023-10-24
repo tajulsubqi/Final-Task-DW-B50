@@ -1,0 +1,53 @@
+.name {
+  color: orangered;
+  text-shadow: 0 0 1px #fff;
+}
+
+.new-line{  
+  display: block;
+}
+
+.content {
+  background-color: #141414;
+  /* padding: 2rem 0 0  */
+}
+
+.socials a{
+  color: #fff;
+  transition: .2s ease-in-out;
+}
+
+.socials a:hover {
+  color: orangered;
+  transform: scale(1.1);
+}
+
+.card-body .title {
+  text-decoration: none;
+  color:#007bff;
+  transition: .3s;
+}
+.card-body .title:hover {
+  color: red;
+}
+
+.edit {
+  background-color: #000;
+  color: #fff;
+  transition: .2s;
+}
+
+.edit:hover {
+  background-color: #0084f8;
+  color: #fff;
+}
+.delete {
+  background-color: #000;
+  color: #fff;
+  transition: .2s;
+}
+
+.delete:hover {
+  background-color: orangered;
+  color: #fff;
+}
